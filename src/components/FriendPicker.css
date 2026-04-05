@@ -1,0 +1,85 @@
+.fp-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fp-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.fp-header p {
+  margin: 4px 0 16px;
+  color: #555;
+  font-size: 14px;
+}
+
+.fp-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fp-card {
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.fp-card.selected {
+  border-color: #1877f2;
+}
+
+.fp-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fp-name {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.fp-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fp-footer button {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.fp-footer button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .fp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fp-card img {
+    width: 60px;
+    height: 60px;
+  }
+}

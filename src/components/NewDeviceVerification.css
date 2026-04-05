@@ -1,0 +1,88 @@
+.ndv-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.ndv-container h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.ndv-card {
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.ndv-card dt {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.ndv-card dd {
+  margin: 0 0 8px 0;
+}
+
+.ndv-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ndv-continue {
+  background-color: #42b72a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ndv-secure {
+  background-color: #f02849;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ndv-help {
+  display: block;
+  margin-bottom: 24px;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ndv-footer {
+  margin-top: 16px;
+}
+
+.ndv-logo {
+  width: 120px;
+  opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  .ndv-container {
+    padding: 16px;
+  }
+  .ndv-continue, .ndv-secure {
+    font-size: 14px;
+  }
+  .ndv-logo {
+    width: 100px;
+  }
+}
